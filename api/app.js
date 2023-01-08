@@ -12,9 +12,7 @@ app.use(express.json())
 // route middleware
 app.use('/api/v1/books', booksRoute)
 
-app.get('/', (req,res) => {
-    res.send("Welcome to home")
-})
+
 
 
 //connect to database
