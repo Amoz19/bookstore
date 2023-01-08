@@ -11,8 +11,9 @@ import Home from './components/pages/Home'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<RootLayout/>}>
-      <Route path='/' element={ <Home />}></Route>
+    <Route path="/" element={<RootLayout />}>
+      <Route path='/' element={<Home />}></Route>
+      <Route path='/about' element={ <About />}>About</Route>
     </Route>
   )
 )
