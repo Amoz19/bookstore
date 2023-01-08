@@ -3,7 +3,9 @@ const HomeUi = ({data}) => {
         <div>
             {data.map(item => (
             <div key={item._id}>
-            <h2>{item.title}</h2>
+                    <h2>{item.title}</h2>
+                    <p>{item.author}</p>
+                    <pre>{item.publishedDDate}</pre>
             </div>
         ))}
      </div>

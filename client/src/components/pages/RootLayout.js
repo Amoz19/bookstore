@@ -4,8 +4,8 @@ const RoootLayout = () => {
         <header>
             <nav>
                 <NavLink to="/">Home</NavLink>
-                {/* <NavLink to="/newbooks">Newbooks</NavLink>
-                <NavLink to="/reviews">Reviews</NavLink> */}
+                <NavLink to="/newbooks">Newbooks</NavLink>
+                <NavLink to="/reviews">Reviews</NavLink>
             </nav>
             <main>
                 <Outlet/>
