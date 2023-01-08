@@ -16,7 +16,7 @@ function App() {
     fetchData()
   }, [])
 
-  console.log(bookdata)
+  // console.log(bookdata)
   
   if (bookdata === null) {
     return <p>Loading data...</p>;
@@ -24,7 +24,7 @@ function App() {
   return (
     <div>
        {bookdata.map(item => (
-        <div key={item.id}>
+        <div key={item._id}>
           <h2>{item.title}</h2>
         </div>
       ))}
