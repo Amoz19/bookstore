@@ -3,7 +3,7 @@ const HomeUi = ({data}) => {
         <div>
             {data.map(item => (
             <div key={item._id}>
-                    <h2>{item.title}</h2>
+                    <h2 className='text-xs text-orange-400'>{item.title}</h2>
                     <p>{item.author}</p>
                     <pre>{item.publishedDDate}</pre>
             </div>

@@ -3,7 +3,7 @@ const RoootLayout = () => {
     return ( 
         <header>
             <nav>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/" >Home</NavLink>
                 <NavLink to="/newbooks">Newbooks</NavLink>
                 <NavLink to="/reviews">Reviews</NavLink>
             </nav>

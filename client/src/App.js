@@ -13,14 +13,13 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route path='/' element={<Home />}></Route>
-      <Route path='/about' element={ <About />}>About</Route>
     </Route>
   )
 )
 
 const App = () => {
   return ( 
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
    );
 }
  
