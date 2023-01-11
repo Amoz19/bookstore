@@ -10,7 +10,17 @@ const data = [
     Rating:4,
     Reviwer: "Aung Mon",
     Review:"Bla Bla"
-  }
+  },
+  {
+    _id:"4500",
+    title:"Hit Refresh",
+    author: "Ye min win",
+    publishedDDate:"19.5.2022",
+    Rating:2,
+    Reviwer: "Amoz",
+    Review:"Ahh hmm"
+  },
+
 ]
 
 const Home = () => {
