@@ -57,15 +57,16 @@ export default function Home() {
     <div>
       {books.map(item => (
         <Link to={item._id.toString()} key={item._id}>
-           {/* <h2 className='flex h-48 justify-center items-center' >{item.title}</h2> */}
                 <div key={item._id} className="flex flex-col items-center">
                    <div className="flex flex-col w-1/4 border-b-2 pt-4 border-indigo-300">
                         <div className=" border-solid border-2 bg-slate-500 text-white">
                              <h2 className='flex h-48 justify-center items-center' >{item.title}</h2>
                          </div>
                         
-                       <p>{item.author}</p>
-                        <pre>{item.publishedDDate}</pre>
+                        <p>Written By : {item.author}</p>
+                        <p> Ratting : {item.Rating}</p>
+                        <pre>publishedDDate : {item.publishedDDate}</pre>
+                        <button className="rounded-full bg-blue-200 my-4">See reviews</button>
                     </div>
                     
               </div>
