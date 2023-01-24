@@ -1,18 +1,19 @@
 const mongoose = require('mongoose')
+const {isEmail} = require('validator')
 
 const ReviewScheme = [{
-    Reviewer: String,
-    Review : String
+    reviewer: String,
+    review : String
 }]
 
 const BookScheme = mongoose.Schema({
     title: String,
     author: String,
     publishedDDate: String,
-    Rating: Number,
+    rating: Number,
     bookDetail: String,
     genre: String,
-    Pages : Number,
+    pages : Number,
     reviews: ReviewScheme
 })
 

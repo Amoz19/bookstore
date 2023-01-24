@@ -16,7 +16,9 @@ app.use(express.json())
 // route middleware
 app.use('/api/v1/books', booksRoute)
 
-
+//cookie
+const cookieParser = require('cookie-parser')
+app.use(cookieParser)
 
 
 //connect to database
